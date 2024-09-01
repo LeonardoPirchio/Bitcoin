@@ -367,3 +367,11 @@ hr {
 .Terms {
     padding-block:40px;
 }
+
+.Terms a, .Terms span {
+    font-size:12px;
+}
+
+.Terms a {
+    margin-bottom:initial;
+}
