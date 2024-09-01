@@ -57,7 +57,7 @@ img {
     justify-content:flex-end;
     height:750px;
     padding-bottom:40px;
-    background:linear-gradient(0deg, #000 15%, transparent), url('/Img/Multiple Bitcoins.png');
+    background:linear-gradient(0deg, #000 15%, transparent), url('/Bitcoin/Img/Multiple Bitcoins.png');
     background-size:auto 692px;
     background-repeat:no-repeat;
 }
@@ -236,7 +236,7 @@ hr {
     min-height:760px;
     margin-top:-30px;
     border-top:5px solid var(--Secondary__Color);
-    background:linear-gradient(0deg, #1E1E1E 15%, transparent 30%), url('/Img/Large Computer.jpg');
+    background:linear-gradient(0deg, #1E1E1E 15%, transparent 30%), url('/Bitcoin/Img/Large Computer.jpg');
     background-position:center top;
     background-repeat:no-repeat;
     background-size:auto 380px;
@@ -317,7 +317,7 @@ hr {
     justify-content:flex-end;
     min-height:835px;
     border-top:5px solid var(--Secondary__Color);
-    background:linear-gradient(0deg, #1E1E1E 72%, transparent 88%), url('/Img/Bitcoin\ Treasure.jpg');
+    background:linear-gradient(0deg, #1E1E1E 72%, transparent 88%), url('/Bitcoin/Img/Bitcoin\ Treasure.jpg');
     background-position:center top;
     background-repeat:no-repeat;
     background-size:contain;
