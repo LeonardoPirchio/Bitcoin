@@ -56,8 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // Função para disparar o evento ao clicar
   function handleButtonClick(event) {
     const buttonLabel = event.target.getAttribute('data-label'); // Obtém o rótulo do botão (opcional)
+    const url = this.getAttribute('data-url');
+    
     fbq('trackCustom', `Botão_${buttonLabel}`);
     // console.log(`Evento Botão_${buttonLabel} disparado`);
+
+    // Redireciona após um pequeno atraso
+    setTimeout(() => {
+        window.location.href = url;
+    }, 300); // Ajuste o tempo de acordo com a necessidade
   }
 
   // Adiciona o listener de click para cada botão
