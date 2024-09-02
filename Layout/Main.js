@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < scrollMilestones.length; i++) {
       if (scrollPercentage >= scrollMilestones[i]) {
         fbq('trackCustom', `Scroll_${scrollMilestones[i]}%`);
-        console.log(`Evento Scroll_${scrollMilestones[i]}% disparado`);
+        // console.log(`Evento Scroll_${scrollMilestones[i]}% disparado`);
         
         // Remove a porcentagem do array após disparar o evento
         scrollMilestones.splice(i, 1);
@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Função para disparar o evento ao clicar
   function handleButtonClick(event) {
     const buttonLabel = event.target.getAttribute('data-label'); // Obtém o rótulo do botão (opcional)
-    // fbq('trackCustom', `Botão_${buttonLabel}_Clicado`);
-    console.log(`Evento Botão_${buttonLabel}_Clicado disparado`);
+    fbq('trackCustom', `Botão_${buttonLabel}`);
+    // console.log(`Evento Botão_${buttonLabel} disparado`);
   }
 
   // Adiciona o listener de click para cada botão
