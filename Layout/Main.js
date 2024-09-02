@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Itera sobre o array de milestones e dispara o evento se a porcentagem foi atingida
     for (let i = 0; i < scrollMilestones.length; i++) {
       if (scrollPercentage >= scrollMilestones[i]) {
-        // fbq('trackCustom', `Botão_${scrollMilestones[i]}%`);
-        console.log(`Evento Botão_${scrollMilestones[i]}% disparado`);
+        fbq('trackCustom', `Scroll_${scrollMilestones[i]}%`);
+        console.log(`Evento Scroll_${scrollMilestones[i]}% disparado`);
         
         // Remove a porcentagem do array após disparar o evento
         scrollMilestones.splice(i, 1);
@@ -47,4 +47,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Adiciona o listener de scroll
   window.addEventListener('scroll', checkScrollPercentage);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Seleciona todos os botões que você quer monitorar
+  const buttons = document.querySelectorAll('.Button__Purchase');
+
+  // Função para disparar o evento ao clicar
+  function handleButtonClick(event) {
+    const buttonLabel = event.target.getAttribute('data-label'); // Obtém o rótulo do botão (opcional)
+    // fbq('trackCustom', `Botão_${buttonLabel}_Clicado`);
+    console.log(`Evento Botão_${buttonLabel}_Clicado disparado`);
+  }
+
+  // Adiciona o listener de click para cada botão
+  buttons.forEach(function (button) {
+    button.addEventListener('click', handleButtonClick);
+  });
 });
