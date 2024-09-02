@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleButtonClick(event) {
     const buttonLabel = event.target.getAttribute('data-label'); // Obtém o rótulo do botão (opcional)
     const url = this.getAttribute('data-url');
-    
+
+    fbq('trackCustom', `Botão`);
     fbq('trackCustom', `Botão_${buttonLabel}`);
     // console.log(`Evento Botão_${buttonLabel} disparado`);
 
