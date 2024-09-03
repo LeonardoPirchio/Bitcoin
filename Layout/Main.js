@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Redireciona após um pequeno atraso
     setTimeout(() => {
         window.location.href = url;
-    }, 300); // Ajuste o tempo de acordo com a necessidade
+    }, 100); // Ajuste o tempo de acordo com a necessidade
   }
 
   // Adiciona o listener de click para cada botão
