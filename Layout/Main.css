@@ -58,7 +58,8 @@ img {
     height:750px;
     padding-bottom:40px;
     background:linear-gradient(0deg, #000 15%, transparent), url('/Bitcoin/Img/Multiple Bitcoins.webp');
-    background-size:auto 692px;
+    /* background-size:auto 692px; */
+    background-size:contain;
     background-repeat:no-repeat;
 }
 
